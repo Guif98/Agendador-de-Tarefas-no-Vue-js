@@ -3,6 +3,7 @@
 </template>
 
 <script>
+import AddTaskVue from './AddTask.vue'
 
     export default {
         name: 'Button',
@@ -12,7 +13,7 @@
         },
         methods: {
             onClick() {
-                alert('Click')
+                this.$emit('btn-click')
             }
         }
     }

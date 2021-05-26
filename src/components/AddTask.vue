@@ -22,7 +22,7 @@ export default ({
     data() {
         return {
             text: '',
-            day: '',
+            dia: '',
             reminder: false,
         }
     },
@@ -36,7 +36,6 @@ export default ({
             }
 
             const newTask = {
-                id: Math.floor(Math.random() * 100000),
                 text: this.text,
                 dia: this.dia,
                 reminder: this.reminder
